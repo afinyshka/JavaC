@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass.FoodStuffSubClass;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.Foodstuff;
+import Seminar_7.HW_001_goods.GoodsSubClass.Foodstuff;
 
 public class Bread  extends Foodstuff{
     String flourType;

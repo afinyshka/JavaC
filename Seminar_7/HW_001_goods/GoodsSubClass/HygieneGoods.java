@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass;
 
-import Seminar_07.HW_001_goods.Goods;
+import Seminar_7.HW_001_goods.Goods;
 
 public class HygieneGoods extends Goods{
     int itemPerPack;

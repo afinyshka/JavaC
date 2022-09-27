@@ -2,14 +2,14 @@ package Seminar_7.HW_001_goods;
 
 import java.util.ArrayList;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.ChildsGoodsSubClass.Diapers;
-import Seminar_07.HW_001_goods.GoodsSubClass.ChildsGoodsSubClass.Dummy;
-import Seminar_07.HW_001_goods.GoodsSubClass.DrinksSubClass.Limonade;
-import Seminar_07.HW_001_goods.GoodsSubClass.DrinksSubClass.Milk;
-import Seminar_07.HW_001_goods.GoodsSubClass.FoodStuffSubClass.Bread;
-import Seminar_07.HW_001_goods.GoodsSubClass.FoodStuffSubClass.Eggs;
-import Seminar_07.HW_001_goods.GoodsSubClass.HygieneGoodsSubClass.Masks;
-import Seminar_07.HW_001_goods.GoodsSubClass.HygieneGoodsSubClass.ToiletPapier;
+import Seminar_7.HW_001_goods.GoodsSubClass.ChildsGoodsSubClass.Diapers;
+import Seminar_7.HW_001_goods.GoodsSubClass.ChildsGoodsSubClass.Dummy;
+import Seminar_7.HW_001_goods.GoodsSubClass.DrinksSubClass.Limonade;
+import Seminar_7.HW_001_goods.GoodsSubClass.DrinksSubClass.Milk;
+import Seminar_7.HW_001_goods.GoodsSubClass.FoodStuffSubClass.Bread;
+import Seminar_7.HW_001_goods.GoodsSubClass.FoodStuffSubClass.Eggs;
+import Seminar_7.HW_001_goods.GoodsSubClass.HygieneGoodsSubClass.Masks;
+import Seminar_7.HW_001_goods.GoodsSubClass.HygieneGoodsSubClass.ToiletPapier;
 
 public class Program {
 

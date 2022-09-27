@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass.ChildsGoodsSubClass;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.ChildsGoods;
+import Seminar_7.HW_001_goods.GoodsSubClass.ChildsGoods;
 
 public class Dummy extends ChildsGoods {
 

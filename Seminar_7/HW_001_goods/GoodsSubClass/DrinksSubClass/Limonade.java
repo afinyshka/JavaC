@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass.DrinksSubClass;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.Drinks;
+import Seminar_7.HW_001_goods.GoodsSubClass.Drinks;
 
 public class Limonade extends Drinks {
 
@@ -11,7 +11,6 @@ public class Limonade extends Drinks {
 
     @Override
     public String getInfo() {
-        // TODO Auto-generated method stub
         return super.getInfo() + ".";
     }
 }

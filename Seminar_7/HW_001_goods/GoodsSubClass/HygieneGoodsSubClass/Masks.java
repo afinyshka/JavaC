@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass.HygieneGoodsSubClass;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.HygieneGoods;
+import Seminar_7.HW_001_goods.GoodsSubClass.HygieneGoods;
 
 public class Masks extends HygieneGoods{
 

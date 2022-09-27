@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass.DrinksSubClass;
 
-import Seminar_07.HW_001_goods.GoodsSubClass.Drinks;
+import Seminar_7.HW_001_goods.GoodsSubClass.Drinks;
 
 public class Milk extends Drinks{
     Double fats;

@@ -1,6 +1,6 @@
 package Seminar_7.HW_001_goods.GoodsSubClass;
 
-import Seminar_07.HW_001_goods.Goods;
+import Seminar_7.HW_001_goods.Goods;
 
 /**
  * Drinks
@@ -15,7 +15,6 @@ public class Drinks extends Goods {
     }
     @Override
     public String getInfo() {
-        // TODO Auto-generated method stub
         return super.getInfo() + String.format("%d ml", volume);
     }
 }
