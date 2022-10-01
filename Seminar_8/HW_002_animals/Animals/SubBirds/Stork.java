@@ -1,6 +1,6 @@
-package Seminar_8.HW_002_animals.SubAnimals.SubBirds;
+package Seminar_8.HW_002_animals.Animals.SubBirds;
 
-import Seminar_8.HW_002_animals.SubAnimals.Birds;
+import Seminar_8.HW_002_animals.Animals.Birds;
 
 public class Stork extends Birds{
 
@@ -9,8 +9,8 @@ public class Stork extends Birds{
     }
 
     @Override
-    public String makeSound() {
-        return "Curr-Curr-Curr!";
+    public void makeSound() {
+        System.out.println("Curr-Curr-Curr!");
     }
 
     

@@ -1,4 +1,4 @@
-package Seminar_8.HW_002_animals.SubAnimals;
+package Seminar_8.HW_002_animals.Animals;
 
 import Seminar_8.HW_002_animals.Animal;
 
@@ -13,18 +13,15 @@ public abstract class WildAnimals extends Animal{
     }
 
 
-    // @Override
-    // public String makeSound() {
-    //     // TODO Auto-generated method stub
-    //     return null;
-    // }
+    @Override
+    public void makeSound() {
+
+    }
 
     @Override
     public String getInfo() {
-        // TODO Auto-generated method stub
         return super.getInfo() + 
-        ", habitat area = " + habitat + " kg" +
-        ", date of discovery = " + dateDiscovery;
+        ", habitat area = " + habitat + ", date of discovery = " + dateDiscovery;
     }
     
 

@@ -1,6 +1,8 @@
 package Seminar_8.HW_002_animals;
 
-public abstract class Animal implements ISoundable {
+import Seminar_8.HW_002_animals.Interfaces.ISoundableInfo;
+
+public abstract class Animal implements ISoundableInfo {
     protected int height;
     protected int weight;
     protected String eyesColor;

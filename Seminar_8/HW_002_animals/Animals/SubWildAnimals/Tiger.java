@@ -1,6 +1,6 @@
-package Seminar_8.HW_002_animals.SubAnimals.SubWildAnimals;
+package Seminar_8.HW_002_animals.Animals.SubWildAnimals;
 
-import Seminar_8.HW_002_animals.SubAnimals.WildAnimals;
+import Seminar_8.HW_002_animals.Animals.WildAnimals;
 
 public class Tiger extends WildAnimals {
 
@@ -10,8 +10,8 @@ public class Tiger extends WildAnimals {
     }
 
     @Override
-    public String makeSound() {
-        return "Rrrr-Rrrr-Rrrr!!!";
+    public void makeSound() {
+        System.out.println("Rrrr-Rrrr-Rrrr!!!");
     }
 
     @Override
