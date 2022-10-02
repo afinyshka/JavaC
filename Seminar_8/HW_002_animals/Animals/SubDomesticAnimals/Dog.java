@@ -13,7 +13,7 @@ public class Dog extends DomesticAnimals implements ITrainable {
     }
 
     public boolean isTrained() {
-        return isTrained;
+        return this.isTrained;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Dog extends DomesticAnimals implements ITrainable {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + ", is trained = " + isTrained + ".";
+        return super.getInfo() + ", is trained = " + this.isTrained + ".";
     }
 
 }

@@ -11,7 +11,7 @@ public class Wolf extends WildAnimals {
     }
 
     public boolean getPackLeader() {
-        return packLeader;
+        return this.packLeader;
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Wolf extends WildAnimals {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + ", is pack leader = " + packLeader + ".";
+        return super.getInfo() + ", is pack leader = " + this.packLeader + ".";
     }
     
 }

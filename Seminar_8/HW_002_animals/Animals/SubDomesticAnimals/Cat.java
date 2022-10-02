@@ -19,6 +19,6 @@ public class Cat extends DomesticAnimals{
     }
      @Override
      public String getInfo() {
-         return super.getInfo() + ", has fur = " + hasFur + ".";
+         return super.getInfo() + ", has fur = " + this.hasFur + ".";
      }
 }
