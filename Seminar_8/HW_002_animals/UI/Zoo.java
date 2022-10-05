@@ -1,19 +1,19 @@
-package Seminar_8.HW_002_animals;
+package Seminar_8.HW_002_animals.UI;
 
 import java.util.ArrayList;
 
+import Seminar_8.HW_002_animals.Animal;
 import Seminar_8.HW_002_animals.Animals.Birds;
 import Seminar_8.HW_002_animals.Interfaces.IAffectionable;
 import Seminar_8.HW_002_animals.Interfaces.ITrainable;
 
 public class Zoo {
-    private ArrayList<Animal> zooList;
+    ArrayList<Animal> zooList;
+    String noText = "There is no animal with given index = ";
 
     public Zoo() {
         this.zooList = new ArrayList<>();
     }
-
-    String noText = "There is no animal with given index = ";
 
     public void addAnimal(Animal... args) { // add few Animal
         for (Animal a : args) {
@@ -123,5 +123,4 @@ public class Zoo {
             makeAnimalShowAffection(i);
         }
     }
-
 }
