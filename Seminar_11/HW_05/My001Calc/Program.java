@@ -8,7 +8,7 @@ public class Program<T> {
         // var m = new CalcModel();
         // var v = new View();
         // Presenter<DifModel> pres = new Presenter(v, m);
-        Presenter pres = new Presenter<CalcModel>(new View(), new CalcModel());
+        // Presenter pres = new Presenter<CalcModel>(new View(), new CalcModel());
 
         pres.buttonClick();
         pres.buttonClick();
