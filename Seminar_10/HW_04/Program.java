@@ -16,9 +16,22 @@ public class Program {
         Cat myCat = new Cat("Pushok", 36, 6, "grey");
         m.write(myCat, true);
 
-        var outStr= m.read();
-        System.out.printf("It's a %s class:\n",outStr.getClass().getSimpleName());
-        System.out.println(outStr);
-        
+        var out = m.read("var");
+
+        System.out.println("---//---//---//---//---//---//---");
+
+        if (out.getClass().getSimpleName().equals(String.class.getSimpleName())) {
+            String outStr = m.read(String.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outStr.getClass().getSimpleName());
+            System.out.println(outStr);
+        } else if (out.getClass().getSimpleName().equals(Integer.class.getSimpleName())) {
+            Integer outInt = m.read(Integer.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outInt.getClass().getSimpleName());
+            System.out.println(outInt);
+        } else if (out.getClass().getSimpleName().equals(Cat.class.getSimpleName())) {
+            Cat outCat = m.read(Cat.class.getSimpleName());
+            System.out.printf("It's a %s class:\n", outCat.getClass().getSimpleName());
+            System.out.println(outCat);
+        }
     }
 }

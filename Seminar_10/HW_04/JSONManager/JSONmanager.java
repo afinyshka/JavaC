@@ -30,7 +30,7 @@ public class JSONmanager {
         }
     }
 
-    public <E> E read() throws IOException {
+    public <E> E read(String type) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String str = "";
         // str = br.readLine();
