@@ -1,37 +1,35 @@
 package Seminar_11.HW_05.My001Calc;
 
-import Seminar_11.HW_05.My001Calc.Models.CalcModel;
-import Seminar_11.HW_05.My001Calc.Models.DifModel;
-import Seminar_11.HW_05.My001Calc.Models.DivModel;
-import Seminar_11.HW_05.My001Calc.Models.ProdModel;
-import Seminar_11.HW_05.My001Calc.Models.SumModel;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Presenter<T extends CalcModel> {
-    View myView;
-    Model myModel;
+import Seminar_11.HW_05.My001Calc.Interfaces.IChoosingAction;
+import Seminar_11.HW_05.My001Calc.Interfaces.ILogger;
+import Seminar_11.HW_05.My001Calc.Interfaces.IView;
 
+public class Presenter {
+    private final IView myView;
+    private final IChoosingAction myModel;
+    private final ILogger logger;
     
 
-    public Presenter(View myView, T myModel) {
+    public Presenter(IView myView, IChoosingAction myModel, ILogger logger) {
         this.myView = myView;
         this.myModel = myModel;
+        this.logger = logger;
     }
 
-
-    public void buttonClick() {
-        int a = myView.getValue("first number");
+    public void buttonClick() throws IOException {
+        double a = myView.getValue("first number");
         String sign = myView.getSign("math char");
-        switch (sign) {
-            case "*" -> new Presenter<ProdModel>(new View(), new ProdModel());
-            case "/" -> new Presenter<DivModel>(new View(), new DivModel());
-            case "+" -> new Presenter<SumModel>(new View(), new SumModel());
-            case "-" -> new Presenter<DifModel>(new View(), new DifModel());
-        }
-        int b = myView.getValue("second number");
-        myModel.setX(a);
-        myModel.setY(b);
-        int result = myModel.result();
-        String resString = String.format("%d + %d = %d", a, b, result);
+        double b = myView.getValue("second number");
+        List<Double> operandsList = new ArrayList<>();
+        operandsList.add(a);
+        operandsList.add(b);
+        double result = myModel.chooseModel(sign, operandsList).result();
+        String resString = String.format("%f %s %f = %f", a, sign, b, result);
         myView.showResult(resString);
+        logger.log(Presenter.class.getSimpleName(), resString);
     }
 }

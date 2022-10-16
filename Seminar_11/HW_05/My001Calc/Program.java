@@ -1,16 +1,21 @@
 package Seminar_11.HW_05.My001Calc;
 
-import Seminar_11.HW_05.My001Calc.Models.CalcModel;
+import java.io.IOException;
 
-public class Program<T> {
+import Seminar_11.HW_05.My001Calc.Base.ChoseModelFactory;
+import Seminar_11.HW_05.My001Calc.Interfaces.ILogger;
+import Seminar_11.HW_05.My001Calc.Logging.SimpleLogger;
+
+public class Program {
     
-    public static void main(String[] args) {
-        // var m = new CalcModel();
-        // var v = new View();
-        // Presenter<DifModel> pres = new Presenter(v, m);
-        // Presenter pres = new Presenter<CalcModel>(new View(), new CalcModel());
+    public static void main(String[] args) throws IOException {
+        ILogger logger = new SimpleLogger();
+        Presenter pres = new Presenter (new View(), new ChoseModelFactory(), logger);
+        logger.log(Program.class.getSimpleName(), "the program is started");
 
         pres.buttonClick();
         pres.buttonClick();
+
+        logger.log(Program.class.getSimpleName(), "the program is finished");
     }
 }

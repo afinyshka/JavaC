@@ -2,12 +2,14 @@ package Seminar_11.HW_05.My001Calc;
 
 import java.util.Scanner;
 
-public class View {
+import Seminar_11.HW_05.My001Calc.Interfaces.IView;
+
+public class View implements IView{
     Scanner sc = new Scanner(System.in);
 
-    public int getValue (String stringName) {
+    public double getValue (String stringName) {
         System.out.printf("%s: ", stringName);
-        return sc.nextInt();
+        return sc.nextDouble();
     }
 
     public String getSign (String stringName) {
