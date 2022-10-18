@@ -30,6 +30,6 @@ public class Presenter {
         double result = myModel.chooseModel(sign, operandsList).result();
         String resString = String.format("%f %s %f = %f", a, sign, b, result);
         myView.showResult(resString);
-        mylogger.log(resString);
+        mylogger.log(Presenter.class.getSimpleName(), "buttonClick", resString);
     }
 }

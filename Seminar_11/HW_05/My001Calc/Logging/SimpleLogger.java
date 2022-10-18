@@ -1,6 +1,7 @@
 package Seminar_11.HW_05.My001Calc.Logging;
 
 import java.util.logging.FileHandler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
@@ -13,9 +14,9 @@ public class SimpleLogger implements ILogger{
     FileHandler fh;
     SimpleFormatter sFormat;
 
-    public Logger getLog (String className) throws IOException {
+    public Logger getLog () throws IOException {
+        this.logger = Logger.getAnonymousLogger();
         // this.logger = Logger.getLogger(className);
-        this.logger = Logger.getLogger(className);
         this.fh = new FileHandler(
                 "Seminar_11/HW_05/My001Calc/Logging/LogData/logCalc.txt");
         logger.addHandler(fh);
@@ -29,6 +30,12 @@ public class SimpleLogger implements ILogger{
         this.sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         logger.info(myText);
+    }
+
+    public void log(String className,String methodName, String message){
+        this.sFormat = new SimpleFormatter();
+        fh.setFormatter(sFormat);
+        logger.logp(Level.INFO, className, methodName, message);
     }
     
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 public interface ILogger {
-    public Logger getLog (String className) throws IOException;
+    public Logger getLog () throws IOException;
     public void log(String myText);
+    public void log(String string, String string2, String string3);
 }
