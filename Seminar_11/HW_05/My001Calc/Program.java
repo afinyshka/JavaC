@@ -11,11 +11,12 @@ public class Program {
     public static void main(String[] args) throws IOException {
         ILogger logger = new SimpleLogger();
         Presenter pres = new Presenter (new View(), new ChoseModelFactory(), logger);
-        logger.log(Program.class.getSimpleName(), "the program is started");
+        logger.getLog("my logger");
+        logger.log("the program is started");
 
-        pres.buttonClick();
-        pres.buttonClick();
+        pres.buttonClick(logger);
+        pres.buttonClick(logger);
 
-        logger.log(Program.class.getSimpleName(), "the program is finished");
+        logger.log("the program is finished");
     }
 }

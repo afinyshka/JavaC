@@ -9,15 +9,26 @@ import Seminar_11.HW_05.My001Calc.Interfaces.ILogger;
 import java.io.IOException;
 
 public class SimpleLogger implements ILogger{
+    Logger logger;
+    FileHandler fh;
+    SimpleFormatter sFormat;
 
-    public void log (String className, String myText) throws IOException {
-        Logger logger = Logger.getLogger(className);
-        FileHandler fh = new FileHandler(
-                "/Users/user/Desktop/GB/Java_course/Seminar_11/HW_05/My001Calc/Logging/LogData/logCalc.txt");
+    public Logger getLog (String className) throws IOException {
+        // this.logger = Logger.getLogger(className);
+        this.logger = Logger.getLogger(className);
+        this.fh = new FileHandler(
+                "Seminar_11/HW_05/My001Calc/Logging/LogData/logCalc.txt");
         logger.addHandler(fh);
+        // SimpleFormatter sFormat = new SimpleFormatter();
+        // fh.setFormatter(sFormat);
+        // logger.info(myText);
+        return logger;
+    }
 
-        SimpleFormatter sFormat = new SimpleFormatter();
+    public void log(String myText) {
+        this.sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         logger.info(myText);
     }
+    
 }

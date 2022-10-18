@@ -20,7 +20,7 @@ public class Presenter {
         this.logger = logger;
     }
 
-    public void buttonClick() throws IOException {
+    public void buttonClick(ILogger logger) throws IOException {
         double a = myView.getValue("first number");
         String sign = myView.getSign("math char");
         double b = myView.getValue("second number");
@@ -30,6 +30,6 @@ public class Presenter {
         double result = myModel.chooseModel(sign, operandsList).result();
         String resString = String.format("%f %s %f = %f", a, sign, b, result);
         myView.showResult(resString);
-        logger.log(Presenter.class.getSimpleName(), resString);
+        logger.log(resString);
     }
 }
