@@ -1,8 +1,8 @@
-окт. 18, 2022 12:48:59 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
+окт. 18, 2022 1:02:23 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
 INFO: the program is started
-окт. 18, 2022 12:49:06 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
-INFO: 4,000000 + 6,000000 = 10,000000
-окт. 18, 2022 12:49:11 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
-INFO: 8,000000 - 7,000000 = 1,000000
-окт. 18, 2022 12:49:11 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
+окт. 18, 2022 1:02:35 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
+INFO: 3,000000 * 5,550000 = 16,650000
+окт. 18, 2022 1:02:45 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
+INFO: 6,000000 / 2,450000 = 2,448980
+окт. 18, 2022 1:02:45 PM Seminar_11.HW_05.My001Calc.Logging.SimpleLogger log
 INFO: the program is finished
