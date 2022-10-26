@@ -1,4 +1,4 @@
-package Seminar_11.HW_05.My001Calc;
+package Seminar_11.HW_05.My001Calc.Views;
 
 import java.util.Scanner;
 

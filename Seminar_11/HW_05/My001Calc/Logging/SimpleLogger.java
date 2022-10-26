@@ -10,9 +10,9 @@ import Seminar_11.HW_05.My001Calc.Interfaces.ILogger;
 import java.io.IOException;
 
 public class SimpleLogger implements ILogger{
-    Logger logger;
-    FileHandler fh;
-    SimpleFormatter sFormat;
+    protected Logger logger;
+    protected FileHandler fh;
+    protected SimpleFormatter sFormat;
 
     public Logger getLog () throws IOException {
         this.logger = Logger.getAnonymousLogger();
@@ -34,7 +34,7 @@ public class SimpleLogger implements ILogger{
 
     public void log(String className,String methodName, String message){
         this.sFormat = new SimpleFormatter();
-        fh.setFormatter(sFormat);
+        this.fh.setFormatter(sFormat);
         logger.logp(Level.INFO, className, methodName, message);
     }
     

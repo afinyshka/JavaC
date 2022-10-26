@@ -1,8 +1,20 @@
-окт. 18, 2022 1:19:52 PM Program Main
-INFO: the program is started
-окт. 18, 2022 1:19:59 PM Presenter buttonClick
-INFO: 5,000000 + 13,000000 = 18,000000
-окт. 18, 2022 1:20:07 PM Presenter buttonClick
-INFO: 90,000000 / 4,560000 = 19,736842
-окт. 18, 2022 1:20:07 PM Program Main
-INFO: the program finished
+окт. 26, 2022 8:17:39 PM UIView consoleUICalc
+INFO: the calculator starts
+окт. 26, 2022 8:17:42 PM UIView consoleUICalc
+INFO: a common regime is initialised
+окт. 26, 2022 8:17:53 PM Presenter buttonClick
+INFO: 3,000000 / 7,560000 = 0,396825
+окт. 26, 2022 8:17:56 PM UIView consoleUICalc
+INFO: a common regime is initialised
+окт. 26, 2022 8:18:06 PM Presenter buttonClick
+INFO: 10,000000 / -4,560000 = -2,192982
+окт. 26, 2022 8:18:13 PM UIView consoleUICalc
+INFO: a complex regime is initialised
+окт. 26, 2022 8:18:32 PM PresenterComplex buttonClickComplex
+INFO: 5.0-3.0i * (-9.0+3.44i) = 9.520000000000003+0.0i
+окт. 26, 2022 8:18:35 PM UIView consoleUICalc
+INFO: a complex regime is initialised
+окт. 26, 2022 8:18:58 PM PresenterComplex buttonClickComplex
+INFO: -5.0+4.3i - (-6.0+6.45i) = 1.0-2.1500000000000004i
+окт. 26, 2022 8:19:00 PM UIView consoleUICalc
+INFO: the calculator finishes
